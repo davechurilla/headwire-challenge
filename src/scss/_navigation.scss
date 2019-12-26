@@ -1,0 +1,20 @@
+.topbar {
+  .md-toolbar {
+    position: fixed;
+    justify-content: center;
+    md-buttons {
+      margin: auto;
+      padding-left: 0 !important;
+      color: $white !important;
+      .md-button {
+        text-transform: none !important;
+        .md-button-content {
+          color: $white !important;
+          text-transform: none !important;
+        }
+      }
+    }
+  }
+}
+
+

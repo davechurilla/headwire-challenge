@@ -1,0 +1,26 @@
+.hero-module {
+  .hero-img {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+  }
+
+  .hero-copy {
+    position: relative;
+    font-weight: 400;
+    margin-top: -32%;
+    left: 10%;
+    color: $white;
+    max-width: 24rem;
+    text-align: left;
+    min-height: 16vw;
+    h1 {
+      line-height: 1;
+      font-size: 3vw;
+      font-weight: 800;
+    }
+    p {
+      font-size: 1rem;
+    } 
+  }
+}
