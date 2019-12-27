@@ -1,20 +1,39 @@
 .services-module {
   margin-top: 12vw;
-  .wrapper {
+  padding-bottom: 4rem;
+  .services-label {
+    background: #e5ebf7;
+    color: $blue;
+    border-radius: 20px;
+    padding: 3px;
+    height: auto;
+    .md-button-content {
+      font-size: 0.5rem;
+      font-weight: $black-bold;
+    }
+  }
+  .wrapper.service-grid {
     display: grid;
-    grid-template-columns: 300px 300px 300px ;
+    grid-template-columns: 225px 225px 225px ;
     grid-gap: 10px;
     color: #444;
     margin: auto;
     justify-content: center;
+    h3 {
+      font-weight: 400;
+      font-size: 1.0rem;
+    }
   }
-
   .box {
     background-color: $white;
-    color: #444;
     border-radius: 2px;
     padding: 20px;
-    font-size: 150%;
+    font-size: 0.7rem;
+    line-height: 1.5;
     box-shadow: 0 0 5px 5px #eaeaea;
-  }  
+    p {
+      color: #999;
+    }
+  }
+  
 }
