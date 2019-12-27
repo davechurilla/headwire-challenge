@@ -1,4 +1,4 @@
-# businet-challenge
+# headwire-challenge
 
 ## Project setup
 ```

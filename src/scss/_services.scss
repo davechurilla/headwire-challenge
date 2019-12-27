@@ -1,4 +1,20 @@
 .services-module {
-  margin-top: 15vw;
-  display: block;
+  margin-top: 12vw;
+  .wrapper {
+    display: grid;
+    grid-template-columns: 300px 300px 300px ;
+    grid-gap: 10px;
+    color: #444;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .box {
+    background-color: $white;
+    color: #444;
+    border-radius: 2px;
+    padding: 20px;
+    font-size: 150%;
+    box-shadow: 0 0 5px 5px #eaeaea;
+  }  
 }

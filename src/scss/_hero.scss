@@ -8,12 +8,12 @@
   .hero-copy {
     position: relative;
     font-weight: 400;
-    margin-top: -32%;
+    margin-top: -32vw;
     left: 10%;
     color: $white;
     max-width: 24rem;
     text-align: left;
-    min-height: 16vw;
+    // min-height: 6vw;
     h1 {
       line-height: 1;
       font-size: 3vw;
@@ -22,5 +22,22 @@
     p {
       font-size: 1rem;
     } 
+  }
+  .hero-btn {
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    text-transform: none;
+    min-width: 100px;
+    min-height: 45px;
+    &.white {
+      background: $white;
+    }
+    &.blue {
+      background: $blue;
+      color: $white;
+    }
+    .md-button-content {
+      padding: 2.0rem 1rem;
+    }    
   }
 }
