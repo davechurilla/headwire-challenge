@@ -6,11 +6,36 @@
       margin: auto;
       .md-button {
         text-transform: none;
+        min-width: auto;       
         .md-button-content {
           color: $white;
           text-transform: none;
+          font-size: 0.8rem;      
+        }  
+      &.active {
+        .md-button-content {
+          color: $blue;
         }
-      }
+      }                      
+    }
+      .brand-logo {
+        .md-button-content {
+          max-width: 105px;
+          margin-right: 4rem;
+        }
+        &:not([disabled]):hover:before {
+          background-color: unset;
+        }            
+      }       
+      .signin-btn {        
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 2rem;
+        font-size: 0.75rem;
+        text-transform: none;
+        min-width: 100px;
+        // min-height: 20px;  
+        margin-left: 4rem; 
+      }         
     }
   }
 }
