@@ -6,7 +6,8 @@
       margin: auto;
       .md-button {
         text-transform: none;
-        min-width: auto;       
+        min-width: auto; 
+        vertical-align: baseline;      
         .md-button-content {
           color: $white;
           text-transform: none;
@@ -15,8 +16,11 @@
       &.active {
         .md-button-content {
           color: $blue;
-        }
-      }                      
+        }      
+      }                       
+    }   
+    .md-menu-content {
+      background: #eee;
     }
       .brand-logo {
         .md-button-content {

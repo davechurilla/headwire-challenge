@@ -2,14 +2,22 @@
   <div class="naviagtion">
     <header class="md-toolbar md-transparent md-elevation-0" md-alignment="centered">
         <div md-aligment="centered" class="md-transparent toolbar-button-set">
-          <button data-v-76466055="" type="button" class="md-button brand-logo"><div class="md-button-content"><img src="../assets/logo-inverse.png" alt=""></div></button>          
+          <md-button data-v-76466055="" type="button" class="md-button brand-logo" href="#"><img src="../assets/logo-inverse.png" alt=""></md-button>          
           <md-button id="tab-home" md-label="Home" :md-ripple="false" class="active" href="#">Home</md-button>
           <md-button id="tab-about" md-label="About Us" :md-ripple="false" :href="url">About Us</md-button>
           <md-button id="tab-team" md-label="Our Team" :md-ripple="false" :href="url">Our Team</md-button>
           <md-button id="tab-pricing" md-label="Pricing" :md-ripple="false" :href="url">Pricing</md-button>           
-          <md-button id="tab-pages" md-label="Pages" :md-ripple="false" :href="url">Pages</md-button>
+          <!-- <md-button id="tab-pages" md-label="Pages" :md-ripple="false" :href="#">Pages</md-button> -->
+          <md-menu md-size="medium" md-align-trigger>
+            <md-button md-menu-trigger :md-ripple="false"   href="#">Pages <span class="big">&caron;</span> </md-button>
+            <md-menu-content>
+              <md-menu-item>Press Release 1</md-menu-item>
+              <md-menu-item>Press Release 2</md-menu-item>
+              <md-menu-item>Press Release 3</md-menu-item>
+            </md-menu-content>
+          </md-menu>          
           <md-button id="tab-contact" md-label="Contact Us" :md-ripple="false" :href="url">Contact Us</md-button>
-          <md-button class="signin-btn" :md-ripple="false">Sign In</md-button>
+          <md-button class="signin-btn" :md-ripple="false" href="#">Sign In</md-button>
         </div>
     </header>
   </div>
