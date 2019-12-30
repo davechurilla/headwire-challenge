@@ -9,7 +9,7 @@
           <md-button id="tab-pricing" md-label="Pricing" :md-ripple="false" :href="url">Pricing</md-button>           
           <!-- <md-button id="tab-pages" md-label="Pages" :md-ripple="false" :href="#">Pages</md-button> -->
           <md-menu md-size="medium" md-align-trigger>
-            <md-button md-menu-trigger :md-ripple="false"   href="#">Pages <span class="big">&caron;</span> </md-button>
+            <md-button md-menu-trigger :md-ripple="false" class="pages"  href="#">Pages <span class="big">&caron;</span></md-button>
             <md-menu-content>
               <md-menu-item>Press Release 1</md-menu-item>
               <md-menu-item>Press Release 2</md-menu-item>

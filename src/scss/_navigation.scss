@@ -13,15 +13,15 @@
           text-transform: none;
           font-size: 0.8rem;      
         }  
-      &.active {
-        .md-button-content {
-          color: $blue;
-        }      
-      }                       
-    }   
-    .md-menu-content {
-      background: #eee;
-    }
+        &.active {
+          .md-button-content {
+            color: $blue;
+          }      
+        }                       
+      }
+      .pages {
+        padding-top: 4px;
+      }   
       .brand-logo {
         .md-button-content {
           max-width: 105px;
@@ -60,7 +60,7 @@ header {
 html:not([data-scroll='0']) header {
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 6;
   background: #2c343b;
   /* This box-shadow will help sell the floating effect */
   box-shadow: 0 0 .5em rgba(0, 0, 0, .5);

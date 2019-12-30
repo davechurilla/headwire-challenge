@@ -19,16 +19,22 @@
     }
   }  
   .about-img {
-    max-width: 400px;
-    padding-right: 50px;
+    padding-right: 100px;
+    max-width:500px;
   }
   .about-copy {
-    max-width: 300px;
     padding-right: 50px;
-    font-size: 0.7rem;
-    line-height: 1.25;
+    font-size: 0.8rem;
+    line-height: 1.5;
     li {
       line-height: 1.75;
     }
+    .headline {
+      max-width: 400px;
+    }
+    .copy {
+      max-width: 300px;
+    }
   }
+
 }

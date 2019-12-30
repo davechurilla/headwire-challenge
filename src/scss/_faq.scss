@@ -1,0 +1,105 @@
+.faq {
+  .accordion {
+    text-align: left;
+    list-style-type: none;
+    color: $gray;
+      .accordion-item {
+        border-radius: 2px;
+        padding: 20px;
+        font-size: 0.8rem;
+        line-height: 1.5;
+        box-shadow: 0 0 5px 2px #eaeaea;
+        margin: 20px 0;      
+      .question {
+        h4 {
+          margin: 10px 0;
+          font-weight: 400;
+          font-size: 1rem;
+          float: left;
+        }
+        .caron {
+          float: right;
+          display: inline-block;
+          padding-top: 20px;
+          margin: 0;
+          line-height: 0;
+        }
+      }
+      .clear {
+        clear: both;
+        padding: 0;
+        margin: 0;
+        line-height: 0;
+        font-size: 0;
+      }
+      .answer {
+        height: 0;
+        opacity: 0;
+        transition: all 1s ease;
+      }
+      &.active {
+        background-color: $white;
+        .question {
+          h4 {
+            color: $blue;
+          }
+          .caron {
+            transform: rotate(-180deg);
+            transition: ease .3s transform;
+            padding-top: 0;
+          }
+        }
+        .answer {
+          height:8vh;
+          opacity: 1;
+        }
+        // .accordion-title-row .accordion-arrow {
+        //   transform: rotate(-180deg);
+        //   transition: ease .3s transform;
+        // }
+
+        // .accordion-content {
+        //   transition: ease .3s all;
+        //   animation-name: fadeIn;
+        //   animation-duration: .6s;
+        //   animation-fill-mode: both;
+        //   will-change: transform;
+        // }
+      }
+    }  
+  }
+}
+// .accordion-item {
+
+//   &.active {
+
+//     .accordion-title-row .accordion-arrow {
+//       transform: rotate(-180deg);
+//       transition: ease .3s transform;
+//     }
+
+//     .accordion-content {
+//       transition: ease .3s all;
+//       animation-name: fadeIn;
+//       animation-duration: .6s;
+//       animation-fill-mode: both;
+//       will-change: transform;
+//     }
+//   }
+// }
+
+// .fade-in {
+//   animation-name: fadeIn;
+//   animation-duration: .6s;
+//   animation-fill-mode: both;
+// }
+
+// @keyframes fadeIn {
+//   from {
+//     opacity: 0;
+//   }
+
+//   to {
+//     opacity: 1;
+//   }
+// }

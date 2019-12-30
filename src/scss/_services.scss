@@ -15,21 +15,23 @@
   }
   .wrapper.service-grid {
     display: grid;
-    grid-template-columns: 225px 225px 225px ;
-    grid-gap: 10px;
-    color: #444;
+    grid-template-columns: 33% 33% 33%;
+    max-width: 800px;
+    grid-column-gap: 25px;
+    grid-row-gap: 40px;
+    color: $gray;
     margin: auto;
     justify-content: center;
     h3 {
       font-weight: 400;
-      font-size: 1.0rem;
+      font-size: 1.25rem;
     }
   }
   .box {
     background-color: $white;
     border-radius: 2px;
     padding: 20px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     line-height: 1.5;
     box-shadow: 0 0 5px 5px #eaeaea;
     p {

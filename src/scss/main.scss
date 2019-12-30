@@ -23,15 +23,23 @@ body {
 }
 h2 {
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 .big {
   font-size: 1.8em;
   font-weight: 400;
-      vertical-align: text-top;
+  vertical-align: text-top;
+}
+.xbig {
+  font-size: 3em;
+  font-weight: 400;
 }
 .md-menu-content {
   background: #eee;
+  .md-list-item-content { 
+    color: $blue;
+    font-size: .75rem;
+  }  
 }
 @import 'about';
 @import 'faq';
