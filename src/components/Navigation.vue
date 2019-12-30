@@ -37,11 +37,7 @@ export default {
     }
   },
   methods: {
-    openCategory(categoryId) {
-      this.categoryId = categoryId;
-      if (!this.categoryId) { return; }
-      this.$emit('clicked', this.categoryId);
-    }
+    //
   },
   beforeMount() {
     // The debounce function receives our function as a parameter

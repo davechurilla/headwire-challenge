@@ -38,5 +38,16 @@
       color: #999;
     }
   }
-  
+  @media only screen and (min-device-width : 320px) and (max-width : 640px) {
+    .wrapper.service-grid {
+      grid-template-columns: 100%;
+      margin: auto 15%;
+    }
+  } 
+  @media only screen and (min-width : 641px) and (max-width : 800px) {
+    .wrapper.service-grid {
+      grid-template-columns: 50% 50%;
+      margin: auto 10%;
+    }
+  }     
 }

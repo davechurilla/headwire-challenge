@@ -3,19 +3,30 @@
     text-align: left;
     list-style-type: none;
     color: $gray;
-      .accordion-item {
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem auto;
+    padding: 0;
+      .faq-item {
         border-radius: 2px;
         padding: 20px;
         font-size: 0.8rem;
         line-height: 1.5;
         box-shadow: 0 0 5px 2px #eaeaea;
-        margin: 20px 0;      
+        margin: 12px 0;      
       .question {
-        h4 {
+        height: fit-content;
+        min-height: 2rem;
+        cursor: pointer;
+        font-weight: 400;
+        .title {
+          float: left;
+          width: 90%;
           margin: 10px 0;
           font-weight: 400;
           font-size: 1rem;
-          float: left;
         }
         .caron {
           float: right;
@@ -35,14 +46,12 @@
       .answer {
         height: 0;
         opacity: 0;
-        transition: all 1s ease;
+        transition: all 0.5s ease;
       }
       &.active {
         background-color: $white;
         .question {
-          h4 {
-            color: $blue;
-          }
+          color: $blue;
           .caron {
             transform: rotate(-180deg);
             transition: ease .3s transform;
@@ -50,56 +59,15 @@
           }
         }
         .answer {
-          height:8vh;
+          height:fit-content;
           opacity: 1;
         }
-        // .accordion-title-row .accordion-arrow {
-        //   transform: rotate(-180deg);
-        //   transition: ease .3s transform;
-        // }
-
-        // .accordion-content {
-        //   transition: ease .3s all;
-        //   animation-name: fadeIn;
-        //   animation-duration: .6s;
-        //   animation-fill-mode: both;
-        //   will-change: transform;
-        // }
       }
     }  
   }
+  @media only screen and (max-width : 800px) {
+    .accordion {
+      margin: 1rem 10%;
+    }
+  }
 }
-// .accordion-item {
-
-//   &.active {
-
-//     .accordion-title-row .accordion-arrow {
-//       transform: rotate(-180deg);
-//       transition: ease .3s transform;
-//     }
-
-//     .accordion-content {
-//       transition: ease .3s all;
-//       animation-name: fadeIn;
-//       animation-duration: .6s;
-//       animation-fill-mode: both;
-//       will-change: transform;
-//     }
-//   }
-// }
-
-// .fade-in {
-//   animation-name: fadeIn;
-//   animation-duration: .6s;
-//   animation-fill-mode: both;
-// }
-
-// @keyframes fadeIn {
-//   from {
-//     opacity: 0;
-//   }
-
-//   to {
-//     opacity: 1;
-//   }
-// }
