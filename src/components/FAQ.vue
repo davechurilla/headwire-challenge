@@ -41,19 +41,6 @@
 
 export default {
   name: 'faq',
-  props: {
-    prop1: {
-      // foo: bar
-    }
-  },
-  data: function() {
-    return {  
-      categoryId: ''
-    }
-  },
-  methods: {
-    // 
-  },
   mounted() {
     // The following logic drives the accordion functionality, works in conjunction with the CSS trnsition to open and close the panels.
     function faqUpdate(event) {

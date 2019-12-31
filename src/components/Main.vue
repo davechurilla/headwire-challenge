@@ -17,25 +17,8 @@ import faq from './FAQ.vue';
 
 export default {
   name: 'Main',
-  props: {
-    prop1: {
-      // foo: bar
-    }
-  },
-  data: function() {
-    return {
-      categoryId: ''
-    }
-  },
   components: {
     navigation, hero, services, about, faq
-  },  
-  methods: {
-    openCategory(categoryId) {
-      this.categoryId = categoryId;
-      if (!this.categoryId) { return; }
-      this.$emit('clicked', this.categoryId);
-    }
   }
 }
 </script>
