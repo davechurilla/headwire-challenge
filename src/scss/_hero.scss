@@ -8,28 +8,28 @@
   .hero-copy {
     position: relative;
     font-weight: 400;
-    margin-top: -32vw;
-    left: 10%;
     color: $white;
-    max-width: 35%;
+    max-width: 800px;
+    margin: -32vw auto auto;
     text-align: left;
     min-height: 20%;
     h1 {
       line-height: 1;
       font-size: 3vw;
       font-weight: 800;
-      max-width: 30rem;
+      max-width: 35vw;
     }
     p {
       font-size: 1rem;
-      max-width: 24rem;
+      max-width: 26rem;
     } 
   }
   .hero-btn {
     border-radius: 2rem;
     font-size: 0.75rem;
     text-transform: none;
-    min-width: 100px;
+    min-width: 120px;
+    margin-right: 1.5rem;
     min-height: 45px;
     &.white {
       background: $white;
@@ -42,4 +42,19 @@
       padding: 2.0rem 1rem;
     }    
   }
+  @media only screen and (max-width : 800px) {
+    .hero-copy {
+      margin: 1rem 10%;
+      color: $gray;
+      h1 {
+        font-size: 1rem;
+        margin-top: 1.5rem;
+        max-width: 100%;
+      }
+    }
+    .hero-btn {
+      width: 100%;
+      margin: 0.5rem 0;
+    }
+  }  
 }

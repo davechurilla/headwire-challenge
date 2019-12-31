@@ -1,67 +1,107 @@
 .topbar {
   .md-toolbar {
     position: fixed;
-    justify-content: center;
+    justify-content: center;  
+    min-height: 6em;  
     .toolbar-button-set {
+      padding-top: 0.6rem;
       margin: auto;
       .md-button {
         text-transform: none;
         min-width: auto; 
-        vertical-align: baseline;      
+        vertical-align: baseline;   
+        padding: 0 4px;
         .md-button-content {
           color: $white;
           text-transform: none;
-          font-size: 0.8rem;      
+          font-size: 0.75rem;      
         }  
-        &.active {
+        &.active, &:hover {
           .md-button-content {
             color: $blue;
           }      
         }                       
       }
       .pages {
-        padding-top: 4px;
+        padding-top: 2px;
       }   
       .brand-logo {
         .md-button-content {
-          max-width: 105px;
+          max-width: 112px;
           margin-right: 4rem;
         }
+      }
+      .brand-logo, .navbar .md-button {
         &:not([disabled]):hover:before {
           background-color: unset;
-        }            
-      }       
+        }          
+      }    
       .signin-btn {        
         border: 1px solid rgba(255, 255, 255, 0.25);
         border-radius: 2rem;
         font-size: 0.75rem;
         text-transform: none;
         min-width: 100px;
-        // min-height: 20px;  
-        margin-left: 4rem; 
-      }         
+        margin-left: 7.5rem; 
+      }   
+      .mobile-nav {
+        display: none;
+        z-index: 999;
+        position: absolute;
+        top: 0;
+        right: 0;        
+      }      
     }
   }
 }
 
+
 /* Make sure the header is always at least 3em high */
-header {
-  min-height: 3em;
+.md-toolbar {
   width: 100%;
+  height: 3rem;
   background-color: transparent;
+  box-shadow: none !important;
 }
 
-/* Reserve the same height at the top of the page as the header min-height */
-// html:not([data-scroll='0']) body {
-//   padding-top: 3em;
-// }
-
 /* Switch to fixed positioning, and stick the header to the top of the page */
-html:not([data-scroll='0']) header {
+html:not([data-scroll='0']) .md-toolbar {
   position: fixed;
   top: 0;
   z-index: 6;
   background: #2c343b;
-  /* This box-shadow will help sell the floating effect */
   box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
 }
+
+@media only screen and (min-width : 800px) and (max-width : 969px)  {
+    .toolbar-button-set {
+      margin: auto;
+      .md-button {
+        padding: 0 !important;
+      }
+      .brand-logo {
+        margin-right: 0 !important;
+      }
+      .signin-btn {
+        margin-left: 3em !important; 
+      }
+    }
+  }
+
+@media only screen and (max-width : 800px) {
+  .mobile-nav {
+    display: block !important;
+  }
+  .navbar, .signin-btn {
+    display: none !important;
+  }
+  .brand-logo {
+    position: absolute !important;
+    left: 10%;
+    top: 10%;
+  }
+  button:not([disabled]):hover:before {
+      background-color: transparent !important;
+      opacity: 0;  
+  }    
+}  

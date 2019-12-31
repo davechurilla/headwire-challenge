@@ -1,7 +1,7 @@
 <template>
   <div class="services">
   <md-button class="services-label" md-label="Our Services" :md-ripple="false" disabled>Our Services</md-button>
-    <h2>What We Do</h2>
+    <h2 class="headline">What We Do</h2>
     <div class="wrapper service-grid">
       <div class="box analysis">
           <div class="service-img"><img src="../assets/service_analysis.png" alt="Market Analysis"/></div>

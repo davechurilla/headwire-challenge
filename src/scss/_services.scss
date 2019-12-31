@@ -13,6 +13,9 @@
       font-weight: $black-bold;
     }
   }
+  .headline {
+    padding-bottom: 1.5rem;
+  }  
   .wrapper.service-grid {
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -39,12 +42,14 @@
     }
   }
   @media only screen and (min-device-width : 320px) and (max-width : 640px) {
+    margin-top: 0;
     .wrapper.service-grid {
       grid-template-columns: 100%;
       margin: auto 15%;
     }
   } 
   @media only screen and (min-width : 641px) and (max-width : 800px) {
+    margin-top: 0;
     .wrapper.service-grid {
       grid-template-columns: 50% 50%;
       margin: auto 10%;

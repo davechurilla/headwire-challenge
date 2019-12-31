@@ -10,31 +10,15 @@
           <li>Quality research & analysis</li>
           <li>Business advisory experience</li>
           <li>Reliable company management</li>
-        </ul>
+        </ul>        
       </div>
+      <md-button class="md-raised about-btn white" :md-ripple="false">Read more</md-button>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'about',
-  props: {
-    prop1: {
-      // foo: bar
-    }
-  },
-  data: function() {
-    return {
-      categoryId: ''
-    }
-  },
-  methods: {
-    openCategory(categoryId) {
-      this.categoryId = categoryId;
-      if (!this.categoryId) { return; }
-      this.$emit('clicked', this.categoryId);
-    }
-  }
+  name: 'about'
 }
 </script>
