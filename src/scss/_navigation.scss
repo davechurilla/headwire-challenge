@@ -73,6 +73,7 @@ html:not([data-scroll='0']) .md-toolbar {
   box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
 }
 
+// Things needs to tighten up a bit for small tablet/large mobile size to avoid weird wrapping
 @media only screen and (min-width : 800px) and (max-width : 969px)  {
     .toolbar-button-set {
       margin: auto;
@@ -88,6 +89,7 @@ html:not([data-scroll='0']) .md-toolbar {
     }
   }
 
+// mobile styles
 @media only screen and (max-width : 800px) {
   .mobile-nav {
     display: block !important;

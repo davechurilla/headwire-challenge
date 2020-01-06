@@ -41,6 +41,7 @@
       color: #999;
     }
   }
+  // small break point, 1 col
   @media only screen and (min-device-width : 320px) and (max-width : 640px) {
     margin-top: 0;
     .wrapper.service-grid {
@@ -48,6 +49,7 @@
       margin: auto 15%;
     }
   } 
+  // medium break point, 2 col
   @media only screen and (min-width : 641px) and (max-width : 800px) {
     margin-top: 0;
     .wrapper.service-grid {

@@ -4,22 +4,6 @@ body {
   background-color: $body-bg;
   background-attachment: fixed;
   font-family: 'Muli', sans-serif !important;
-  &.menu-open, &.hide-global-menu {
-    position: fixed;
-  }
-  &.menu-open {
-    .hideme {
-      opacity: 1 !important;
-    }
-  }
-}
-.hiddenscroll { transition: opacity 1.0s; }
-.hideme, .hiddenscroll {
-  opacity: 0;
-  &.showme {
-  transition: opacity 1.0s;
-    opacity: 1;
-  }
 }
 h2 {
   font-weight: 400;
