@@ -42,8 +42,12 @@
         font-size: 0.75rem;
         text-transform: none;
         min-width: 100px;
-        margin-left: 7.5rem; 
-      }   
+        margin-left: 7.5rem;
+        &:not([disabled]):hover:before {
+          background-color: #fff;
+          opacity: .75;
+        } 
+      }          
       .mobile-nav {
         display: none;
         z-index: 999;

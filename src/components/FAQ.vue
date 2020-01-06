@@ -55,7 +55,6 @@ export default {
           element.removeAttribute('style')
         });          
         // add class to currently clicked target element so CSS is applied to expand the answer and apply styles
-      
         clickedParent.classList.add('active')
         clickedParent.children[2].classList.add('expanded')
         const answerDivHeight = clickedParent.offsetHeight/1.25
@@ -65,7 +64,6 @@ export default {
     // apply initial styles to first FAQ question and answer to be expanded by default.
     const initAnswer = document.getElementsByClassName('expanded')[0]
     initAnswer.style.height = initAnswer.parentElement.offsetHeight + 'px'
-
     // define the caron as the click area for expanding the FAQ element
     const faqQuestions = document.getElementsByClassName('caron')
     // add listener to the caron click area so we can then trigger an event handler that will toggle classes
