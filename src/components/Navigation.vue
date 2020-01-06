@@ -11,6 +11,7 @@
             <!-- <md-button id="tab-pages" md-label="Pages" :md-ripple="false" :href="#">Pages</md-button> -->
             <md-menu md-size="medium" md-align-trigger>
               <md-button md-menu-trigger :md-ripple="false" class="pages"  href="#">Pages <span class="big">&caron;</span></md-button>
+              <!-- Drop down menu options for placeholder only -->
               <md-menu-content>
                 <md-menu-item>Press Release 1</md-menu-item>
                 <md-menu-item>Press Release 2</md-menu-item>
@@ -21,7 +22,7 @@
           </span>
           <md-button class="signin-btn" :md-ripple="false" href="#">Sign In</md-button>
 
-        <!-- mobile navigation -->
+        <!-- mobile navigation - placeholder only, no menu options -->
         <Temporary class="mobile-nav"></Temporary>
         </div>
     </md-toolbar>
@@ -42,6 +43,8 @@ export default {
     Temporary
   },  
   beforeMount() {
+    // Snippet below is one I keep on hand for this effect for the in-scroll header style changes
+
     // The debounce function receives our function as a parameter
     const debounce = (fn) => {
 
