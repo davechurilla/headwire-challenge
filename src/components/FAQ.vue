@@ -39,7 +39,7 @@ export default {
   name: 'faq',
   mounted() {
     // The following logic drives the accordion functionality, works in conjunction with the CSS trnsition to open and close the panels.
-    function faqUpdate(event) {
+    function faqToggler(event) {
       // define the current clicked element
       const clickedParent = event.target.parentElement.parentElement
       // make sure click event is not duplicating handlers on already active element
@@ -68,7 +68,7 @@ export default {
     const faqQuestions = document.getElementsByClassName('caron')
     // add listener to the caron click area so we can then trigger an event handler that will toggle classes
     Array.from(faqQuestions).forEach(function(element) {
-      element.addEventListener('click', faqUpdate)
+      element.addEventListener('click', faqToggler)
     });   
   }
 }
