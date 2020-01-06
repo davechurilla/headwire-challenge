@@ -42,26 +42,28 @@ export default {
     function faqUpdate(event) {
       // define the current clicked element
       const clickedParent = event.target.parentElement.parentElement
-
-      // clear all styles for expanded active active FAQ
-      const faqItems = document.querySelectorAll('.faq-item')
-      const answers = document.querySelectorAll('.answer')
-      Array.from(faqItems).forEach(function(element) {
-        element.classList.remove('active')
-      });
-      Array.from(answers).forEach(function(element) {
-        element.classList.remove('expanded')
-        element.removeAttribute('style')
-      });          
-      // add class to currently clicked target element so CSS is applied to expand the answer and apply styles
-      clickedParent.classList.add('active')
-      clickedParent.children[2].classList.add('expanded')
-      const answerDivHeight = clickedParent.offsetHeight/1.25
-      document.getElementsByClassName('expanded')[0].style.height = answerDivHeight + 'px'
+      // make sure click event is not duplicating handlers on already active element
+      if (!clickedParent.classList.contains('active')) {
+        // clear all styles for expanded active active FAQ
+        const faqItems = document.querySelectorAll('.faq-item')
+        const answers = document.querySelectorAll('.answer')
+        Array.from(faqItems).forEach(function(element) {
+          element.classList.remove('active')
+        });
+        Array.from(answers).forEach(function(element) {
+          element.classList.remove('expanded')
+          element.removeAttribute('style')
+        });          
+        // add class to currently clicked target element so CSS is applied to expand the answer and apply styles
+      
+        clickedParent.classList.add('active')
+        clickedParent.children[2].classList.add('expanded')
+        const answerDivHeight = clickedParent.offsetHeight/1.25
+        document.getElementsByClassName('expanded')[0].style.height = answerDivHeight + 'px'
+      }
     }
     // apply initial styles to first FAQ question and answer to be expanded by default.
     const initAnswer = document.getElementsByClassName('expanded')[0]
-    console.log(initAnswer.parentElement.offsetHeight)
     initAnswer.style.height = initAnswer.parentElement.offsetHeight + 'px'
 
     // define the caron as the click area for expanding the FAQ element
